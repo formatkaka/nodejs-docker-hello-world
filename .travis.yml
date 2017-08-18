@@ -5,8 +5,8 @@ before_deploy: "echo 'Ready'"
 
 deploy: 
   provider: elasticbeanstalk
-  app: travis-eb
-  env: gtmtest
+  app: gtmtest
+  env: travis-eb
   bucket_name: elasticbeanstalk-ap-south-1-477544607824
   region: ap-south-1
   access_key_id: $ACCESS_KEY_ID
