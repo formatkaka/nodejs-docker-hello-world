@@ -1,0 +1,15 @@
+language: node_js
+
+before_deploy: "echo 'Ready'"
+
+
+deploy: 
+  provider: elasticbeanstalk
+  app: travis-eb
+  env: gtmtest
+  bucket_name: elasticbeanstalk-ap-south-1-477544607824
+  region: ap-south-1
+  access_key_id: $ACCESS_KEY_ID
+  secret_access_key: $SECRET_ACCESS_KEY
+
+after_deploy: "echo 'Deployment process completed!!'"
